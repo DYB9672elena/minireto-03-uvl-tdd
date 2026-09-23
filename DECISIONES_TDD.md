@@ -3,17 +3,19 @@
 ## Ciclo 1
 
 ### Red
-- Prueba añadida:
-- Técnica de diseño de pruebas empleada:
-- Motivo de elegir este caso:
-- Fallo observado:
+- Prueba añadida: Ninguna prueba añadida
+- Técnica de diseño de pruebas empleada: Red-Green-Refactor
+- Motivo de elegir este caso: Because yes
+- Fallo observado: 'NotImplementeError' en 'classify_model_size()'
 
 ### Green
-- Código mínimo escrito:
-- Resultado de las pruebas:
+- Código mínimo escrito: 
+        def classify_model_size(feature_count: int) -> str:
+            return "tiny"
+- Resultado de las pruebas: passed
 
 ### Refactor
-- Mejora realizada, o motivo por el que no era necesaria:
+- Mejora realizada, o motivo por el que no era necesaria: Ninguna mejora realizada en las pruebas, cambio en la función a probar.
 
 ---
 
