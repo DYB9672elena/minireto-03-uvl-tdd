@@ -113,3 +113,35 @@ def test_thirty_one_features_is_large():
 - Mejora realizada, o motivo por el que no era necesaria: Añadir las categorías restantes.
 
 ---
+
+## Ciclo 5
+
+### Red
+- Prueba añadida: Cambio en las pruebas de las categorias
+- Técnica de diseño de pruebas empleada: Red-Green-Refactor
+- Motivo de elegir este caso: Pruebas
+- Fallo observado: ninguno
+
+### Green
+- Código mínimo escrito: 
+
+@pytest.mark.parametrize(
+    ("feature_count", "expected"),
+    [
+        (1, "tiny"),
+        (5, "tiny"),
+        (6, "small"),
+        (15, "small"),
+        (16, "medium"),
+        (30, "medium"),
+        (31, "large"),
+    ],
+)
+def test_classify_model_size(feature_count, expected):
+    assert classify_model_size(feature_count) == expected
+
+- Resultado de las pruebas: passed
+### Refactor
+- Mejora realizada, o motivo por el que no era necesaria: Refactorización en las preubas.
+
+---
