@@ -20,3 +20,24 @@
 ---
 
 Copiad este bloque para cada ciclo.
+
+
+## Ciclo 2
+
+### Red
+- Prueba añadida: Rechazar cero características
+- Técnica de diseño de pruebas empleada: Red-Green-Refactor
+- Motivo de elegir este caso: Pruebas
+- Fallo observado: DID NOT RAISE ValueError
+
+### Green
+- Código mínimo escrito: 
+def test_zero_features_is_invalid():
+    with pytest.raises(ValueError):
+        classify_model_size(0)
+- Resultado de las pruebas: passed
+
+### Refactor
+- Mejora realizada, o motivo por el que no era necesaria: Evitar los casos nules con características a <1.
+
+---
