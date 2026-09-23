@@ -41,3 +41,26 @@ def test_zero_features_is_invalid():
 - Mejora realizada, o motivo por el que no era necesaria: Evitar los casos nules con características a <1.
 
 ---
+
+## Ciclo 3
+
+### Red
+- Prueba añadida: la categoría tiny acaba en 5 y en 6 empieza small.
+- Técnica de diseño de pruebas empleada: Red-Green-Refactor
+- Motivo de elegir este caso: Pruebas
+- Fallo observado: ninguno
+
+### Green
+- Código mínimo escrito: 
+def test_five_features_is_tiny():
+    assert classify_model_size(5) == "tiny"
+
+
+def test_six_features_is_small():
+    assert classify_model_size(6) == "small"
+- Resultado de las pruebas: passed
+
+### Refactor
+- Mejora realizada, o motivo por el que no era necesaria: añadir una nueva categotía llamada small, a partir de seis.
+
+---
